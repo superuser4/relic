@@ -91,7 +91,7 @@ fn count_lines(_path: String, ext: Option<String>) -> u64 {
         None => {},
     }
 
-    let mut fp: fs::File = fs::File::open(_path).expect("Unable to open file");
+    let mut fp: fs::File = fs::File::open(_path).unwrap();
     let mut contents: String = String::new();
     fp.read_to_string(&mut contents).expect("Unable to read from file");
 

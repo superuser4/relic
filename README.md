@@ -1,2 +1,2 @@
-# clic
+# relic
 File line counter
